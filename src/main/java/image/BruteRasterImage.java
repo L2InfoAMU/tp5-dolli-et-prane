@@ -51,4 +51,13 @@ public class BruteRasterImage implements Image{
         this.color = color;
     }
 
+    public void setPixelColor(Color color, int x, int y){
+        this.pixels[y][x] = color;
+    }
+
+    public enum RasterImageType{
+        BRUTE;
+
+    }
+
 }

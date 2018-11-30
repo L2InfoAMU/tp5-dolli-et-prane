@@ -26,6 +26,7 @@ public class Display implements Initializable {
 
         // TODO : rajouter la création d'une fabrique d'image pour initialiser imageFactory
 
+
         this.image = imageFactory.makeImage();
 
         render();
@@ -51,5 +52,7 @@ public class Display implements Initializable {
     private void renderPixel(int x, int y, PixelWriter pixelWriter) {
         pixelWriter.setColor(x, y, image.getPixelColor(x, y));
     }
+
+
 
 }
