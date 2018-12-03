@@ -29,7 +29,6 @@ public class Display implements Initializable {
                 200, Color.RED, RasterImageType.BRUTE);
 
 
-
         this.image = imageFactory.makeImage();
 
 
