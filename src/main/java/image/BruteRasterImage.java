@@ -27,7 +27,7 @@ public class BruteRasterImage implements Image{
         createRepresentation();
         for(int i = 0;i< getWidth();i++){
             for(int j = 0 ; j < getHeight(); j++){
-                this.pixels[i][j] = color[i][j];
+                this.pixels[i][j] = colors[i][j];
             }
         }
     }
