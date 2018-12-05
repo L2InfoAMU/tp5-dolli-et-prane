@@ -14,11 +14,22 @@ public class BruteRasterImage implements Image{
         this.color = color;
         this.width = width;
         this.height= height;
+        createRepresentation();
+        for(int i = 0; i< getWidth();i++){
+            for(int j = 0; j< getHeight(); j++){
+                this.pixels[i][j] = color;
+            }
+        }
     }
 
     public BruteRasterImage(Color[][] colors){
         requiresNonNull(colors);
-        this.pixels = colors;
+        createRepresentation();
+        for(int i = 0;i< getWidth();i++){
+            for(int j = 0 ; j < getHeight(); j++){
+                this.pixels[i][j] = color[i][j];
+            }
+        }
     }
 
     public void createRepresentation(){
